@@ -1,13 +1,13 @@
 {
   "name": "@ckd/vue-button",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.1-alpha.1",
   "scripts": {
     "serve": "vue-cli-service serve demo/main.js",
     "build": "vue-cli-service build --modern --target lib src/button.vue",
     "test": "vue-cli-service test:unit --coverage",
     "lint": "vue-cli-service lint"
   },
-  "main": "src/button.vue",
+  "main": "dist/@ckd/vue-button.common.js",
   "unpkg": "dist/@ckd/vue-button.umd.min.js",
   "files": [
     "src",
@@ -38,6 +38,9 @@
     "vue": "^2.6.10",
     "vue-jest": "^3.0.4",
     "vue-template-compiler": "^2.5.21"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "eslintConfig": {
     "root": true,
@@ -131,10 +134,10 @@
       "autoprefixer": {}
     }
   },
-  "babel": {		
-    "presets": [		
-      "@vue/app"		
-    ]		
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
   },
   "jest": {
     "verbose": true,
