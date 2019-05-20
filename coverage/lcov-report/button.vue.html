@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>11/22</span>
+        <span class='fraction'>22/22</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">46.67% </span>
+        <span class="strong">73.33% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>7/15</span>
+        <span class='fraction'>11/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">83.33% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/6</span>
+        <span class='fraction'>5/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>11/22</span>
+        <span class='fraction'>22/22</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -511,37 +511,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -752,7 +752,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-  &lt;button type="button" v-bind="$attrs" v-on="$listeners" @mousedown="onClick($event)" class="v-button" :disabled="disabled || loading" :class="[{ 'is-loading': loading, 'is-disabled': disabled }]" :style="style"&gt;
+  &lt;button type="button" v-bind="$attrs" v-on="$listeners" @click="onClick($event)" @keydown.enter="onClick($event)" class="v-button" :disabled="disabled || loading" :class="[{ 'is-loading': loading, 'is-disabled': disabled }]" :style="style"&gt;
     &lt;div class="frame"&gt;
       &lt;div class="loader"&gt;
         &lt;svg class="circular" viewBox="25 25 50 50"&gt;
@@ -863,31 +863,31 @@ export default {
     /**
      * Add the ripple when clicked
      */
-<span class="fstat-no" title="function not covered" >    onClick: function(event){</span>
+    onClick: function(event){
       // Don't ripple if loading, disabled, or not configured to ripple
-<span class="cstat-no" title="statement not covered" >      if(this.loading || this.disabled || !this.ripple) return</span>
+<span class="missing-if-branch" title="if path not taken" >I</span>      if(this.loading || this.disabled || !this.ripple) return
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      const x      = event.pageX - this.$el.offsetLeft</span>
-<span class="cstat-no" title="statement not covered" >      const y      = event.pageY - this.$el.offsetTop</span>
-<span class="cstat-no" title="statement not covered" >      const rect   = this.$el.getBoundingClientRect()</span>
-<span class="cstat-no" title="statement not covered" >      const ripple = document.createElement('div')</span>
+      const x      = event.pageX - this.$el.offsetLeft
+      const y      = event.pageY - this.$el.offsetTop
+      const rect   = this.$el.getBoundingClientRect()
+      const ripple = document.createElement('div')
 &nbsp;
       // Set the default ripple scale based on the max width/height
       // of the button element. Multiplies the resulting scale by 2
       // to account for a ripple that might originate from one edge
       // of the button (to ensure it still fills the whole button area)
-<span class="cstat-no" title="statement not covered" >      this.defaultRippleScale = (Math.max(rect.width, rect.height) / 40) * 2</span>
+      this.defaultRippleScale = (Math.max(rect.width, rect.height) / 40) * 2
 &nbsp;
       // Add the ripple element to the button
-<span class="cstat-no" title="statement not covered" >      ripple.classList.add('ripple')</span>
-<span class="cstat-no" title="statement not covered" >      this.$el.appendChild(ripple)</span>
+      ripple.classList.add('ripple')
+      this.$el.appendChild(ripple)
 &nbsp;
       // Position the ripple element at the clicked position
-<span class="cstat-no" title="statement not covered" >      ripple.style.left = `${x}px`</span>
-<span class="cstat-no" title="statement not covered" >      ripple.style.top  = `${y}px`</span>
+      ripple.style.left = `${x}px`
+      ripple.style.top  = `${y}px`
 &nbsp;
       // After the ripple animation duration, remove the element
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      setTimeout(() =&gt; this.$el.removeChild(ripple), this.rippleDuration)</span></span>
+<span class="fstat-no" title="function not covered" >      setTimeout(() =&gt; this.$el.removeChild(ripple), this.rippleDuration)</span>
     }
   },
   computed: {
@@ -1111,7 +1111,7 @@ export default {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 29 2019 13:49:44 GMT-0600 (Mountain Daylight Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon May 20 2019 14:40:17 GMT-0600 (Mountain Daylight Time)
 </div>
 </div>
 <script src="prettify.js"></script>

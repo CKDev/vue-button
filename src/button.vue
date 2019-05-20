@@ -1,5 +1,5 @@
 <template>
-  <button type="button" v-bind="$attrs" v-on="$listeners" @mousedown="onClick($event)" class="v-button" :disabled="disabled || loading" :class="[{ 'is-loading': loading, 'is-disabled': disabled }]" :style="style">
+  <button type="button" v-bind="$attrs" v-on="$listeners" @click="onClick($event)" @keydown.enter="onClick($event)" class="v-button" :disabled="disabled || loading" :class="[{ 'is-loading': loading, 'is-disabled': disabled }]" :style="style">
     <div class="frame">
       <div class="loader">
         <svg class="circular" viewBox="25 25 50 50">

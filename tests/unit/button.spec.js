@@ -46,4 +46,13 @@ describe('button.vue', () => {
     const wrapper = shallowMount(Button, { propsData: { buttonColor: '#323a45' } })
     expect(wrapper.vm.style['--ripple-color']).toEqual('rgba(30, 34.8, 41.4, 1)')
   })
+
+  it('should trigger the click handler when clicked', () => {
+    const wrapper = mount(Button)
+    const spy = jest.spyOn(wrapper.vm, 'onClick')
+
+    wrapper.find('.v-button').trigger('click')
+    
+    expect(spy).toHaveBeenCalledTimes(1)
+  })
 })
